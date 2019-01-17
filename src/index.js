@@ -1,11 +1,19 @@
+// Import React Dependencies
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import './index.css';
 
 // Grab the DOM element
 const rootElement = document.getElementById('root');
 
-// Create your DOM element
-const headingElement = document.createElement('h1');
-headingElement.innerHTML = "Hello World"
+// Create your React element
+const reactElement = React.createElement(
+  "h1",
+  {},
+  "Hello World"
+)
 
-// Add your DOM element to the DOM for rendering
-rootElement.appendChild(headingElement);
+// This is point of interaction of React and HTML DOM
+// Add your React Element for rendering
+ReactDOM.render(reactElement, rootElement);
