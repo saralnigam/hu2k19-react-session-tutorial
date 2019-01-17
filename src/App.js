@@ -1,6 +1,9 @@
 // Import React Dependencies
 import React, { Component } from 'react';
 
+// Import Components
+import Heading from './components/Heading/Heading';
+
 // Import Styles
 import './App.css';
 
@@ -8,7 +11,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <h1>Hello World</h1>
+      <Heading headingText="Hello World!!" />
     );
   }
 }
